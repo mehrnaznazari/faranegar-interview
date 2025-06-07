@@ -1,0 +1,38 @@
+<section class="login-section">
+  <header class="login-header">
+    <h2>Welcome to Angular Interview App of Varanegar</h2>
+    <p>
+      AngularInterview is a sample Angular application designed for interview or
+      demonstration purposes. It uses Angular 18 and integrates with a shared
+      library (fararu-common-lib) to provide reusable components, services, and
+      utilities.
+    </p>
+  </header>
+
+  @if (showLoginForm){
+  <div class="login-container">
+    <ui-textbox
+      class="login-input"
+      [placeholder]="'Username'"
+      [(ngModel)]="username"
+    />
+    <ui-textbox
+      class="login-input"
+      type="password"
+      [placeholder]="'Password'"
+      [(ngModel)]="password"
+    />
+    <ui-button
+      class="login-btn"
+      color="primary"
+      varient="outline"
+      (click)="login()"
+      >Login</ui-button
+    >
+  </div>
+  }
+  <nav class="login-nav">
+    <a class="nav-link" [routerLink]="['/sample']">Sample </a>
+    <a class="nav-link" [routerLink]="['/test']">Test </a>
+  </nav>
+</section>

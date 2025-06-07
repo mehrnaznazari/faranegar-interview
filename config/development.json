@@ -1,0 +1,15 @@
+{
+  "ignoreAccessNode": false,
+  "version": "0/02",
+  "api": {
+    "baseUrl": "http://93.118.119.118:55440",
+    "baseUrl2": "http://192.168.3.70:8080"
+  },
+  "tracerApi": {
+    "baseUrl": "http://93.118.119.118:55740"
+  },
+  "ngtApi": {
+    "baseUrl": "http://77.238.123.10:20200"
+  },
+  "remotes": {}
+}

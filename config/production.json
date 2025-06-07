@@ -1,0 +1,16 @@
+{
+  "version": "VersionVariable",
+  "api": {
+    "baseUrl": "http://93.118.119.118:55740"
+  },
+  "tracerApi": {
+    "baseUrl": "http://93.118.119.118:12369"
+  },
+  "ngtApi": {
+    "baseUrl": "http://77.238.123.10:20200"
+  },
+  "remotes": {
+    "review": { "url": "http://77.238.123.8:8988" },
+    "tracer": { "url": "http://77.238.123.8:8987" }
+  }
+}

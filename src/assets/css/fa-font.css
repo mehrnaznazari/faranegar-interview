@@ -1,0 +1,18 @@
+
+body,
+input,
+button,
+textarea {
+  font-family: yekan !important;
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: yekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/yekan/yekan.eot");
+  src: url("../fonts/yekan/yekan.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/yekan/yekan.woff") format("woff"),
+    url("../fonts/yekan/yekan.ttf") format("truetype");
+}
