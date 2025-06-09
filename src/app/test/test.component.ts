@@ -69,8 +69,12 @@ export class TestComponent implements OnInit {
           formConfig: {
             type: "textbox",
             maxlength: 50,
-            // disabled: (currentValues: UnitModelType) => !currentValues.unitCode,
-            // REVIEW: Please use disabled2 instead of disabled! It is very similar to dynamicConfig. Look at the sample component to become familiar with it.
+            disabled2: {
+              dependencies: ['unitCode'],
+              setup: (currentValues) => {
+                return !currentValues.unitCode;
+              },
+            },
             validators: [
               {
                 name: "required",
